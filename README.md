@@ -32,7 +32,7 @@ If you leave out the `--port-forward` option then accessing the application's en
 ### Generator installation
 
 ```bash
-tss generator install --go-getter-url=github.com/markpollack/generator-k8s-simple
+tss generator install --go-getter-url=github.com/tanzu-dev/generator-k8s-skaffold
 ```
 
 To use the install command you need to install [go-getter](https://github.com/hashicorp/go-getter#installation-and-usage) CLI.
