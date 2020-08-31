@@ -11,7 +11,7 @@ You will need to install the following command line tool:
 
 ### Build the application and deploy to Kubernetes
 
-This command will build the conatiner image, deploy the application and port-forward the service to `localhost:8080`
+This command will build the container image, deploy the application and port-forward the service to `localhost:8080`
 
 ```bash
 skaffold run --port-forward

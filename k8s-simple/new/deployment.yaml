@@ -1,0 +1,38 @@
+---
+actions:
+  to: kubernetes/deployment.yaml
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: {{artifactId}}
+  name: {{artifactId}}-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{artifactId}}
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: {{artifactId}}
+    spec:
+      containers:
+      - image: {{artifactId}}:{{artifactVersion}}
+        imagePullPolicy: IfNotPresent
+        livenessProbe:
+          httpGet:
+            path: /actuator/info
+            port: 8080
+        name: app
+        ports:
+        - containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8080
+
+
+
+
