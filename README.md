@@ -1,6 +1,6 @@
 # Simple generator for Kubernetes resources
 
-This generator creates the Kubernetes `service` and `deploymnet` resources files to deploy a Spring Boot application using Skaffold with the generated `skaffold.yaml`
+This generator creates the Kubernetes `service` and `deployment` resources files to deploy a Spring Boot application using Skaffold with the generated `skaffold.yaml`
 
 You will need to install the following command line tool:
 
