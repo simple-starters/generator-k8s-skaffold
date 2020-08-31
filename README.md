@@ -17,9 +17,11 @@ This command will build the container image, deploy the application and port-for
 skaffold run --port-forward
 ```
 
-Use `kubectl get all` to verify that the resources created.
+Open another terminal window to interract with the application or Kubernetes API server.
 
-If you leave out the `--port-forward` option then accessing the application's endpoint varies based on the type of Kubernetes cluster you are using.
+You can use `kubectl get all` to verify that the resources created.
+
+If you leave out the `--port-forward` option then accessing the application's endpoint varies based on the type of Kubernetes cluster and ingress configuration you are using.
 
 ## Generator
 
