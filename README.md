@@ -43,7 +43,7 @@ The `skaffold run` command will build the container image, deploy the applicatio
 
 Open another terminal window to interract with the application or Kubernetes API server.
 
-You can use `kubectl get all` to verify that the resources created.
+You can use `kubectl get all` to verify that the resources were created.
 
 If you leave out the `--port-forward` option then accessing the application's endpoint varies based on the type of Kubernetes cluster and ingress configuration you are using.
 
