@@ -17,6 +17,7 @@ spec:
     metadata:
       labels:
         app.kubernetes.io/name: {{artifactId}}
+        app.kubernetes.io/part-of: {{artifactId}}
     spec:
       containers:
       - image: {{artifactId}}:{{artifactVersion}}
