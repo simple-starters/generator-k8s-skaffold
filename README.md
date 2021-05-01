@@ -14,7 +14,7 @@ You will need to install the following command line tool:
 For a local cluster like Minikube or Docker Desktop you can simply run:
 
 ```bash
-skaffold run --port-forward --profile=local
+skaffold run --port-forward --profile=local --tail
 ```
 
 For a remote cluster you need to specify the `default-repo` which is the registry prefix for the image that is being built. For Docker Hub the prefix would be your Docker ID, for other registries it would typically be the registry URL plus your project.
@@ -36,7 +36,7 @@ skaffold config set default-repo ${REGISTRY_PREFIX}
 Finally, you can specify it as part of the `run` command:
 
 ```bash
-skaffold run --default-repo ${REGISTRY_PREFIX} --port-forward 
+skaffold run --default-repo ${REGISTRY_PREFIX} --port-forward --tail
 ```
 
 The `skaffold run` command will build the container image, deploy the application and port-forward the service to `localhost:8080`
