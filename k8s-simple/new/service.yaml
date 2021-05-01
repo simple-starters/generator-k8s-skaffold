@@ -7,7 +7,7 @@ kind: Service
 metadata:
   labels:
     app.kubernetes.io/name: {{artifactId}}
-  name: {{artifactId}}-service
+  name: {{artifactId}}
 spec:
   ports:
   - port: 80
