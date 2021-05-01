@@ -14,7 +14,7 @@ You will need to install the following command line tool:
 For a local cluster like Minikube or Docker Desktop you can simply run:
 
 ```bash
-skaffold run --port-forward
+skaffold run --port-forward --profile=local
 ```
 
 For a remote cluster you need to specify the `default-repo` which is the registry prefix for the image that is being built. For Docker Hub the prefix would be your Docker ID, for other registries it would typically be the registry URL plus your project.
