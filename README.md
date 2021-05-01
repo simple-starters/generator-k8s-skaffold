@@ -54,17 +54,3 @@ To delete the deployment and the service from your Kubernetes cluster run:
 ```bash
 skaffold delete
 ```
-
-## Generator
-
-`k8s-simple new` creates
-
-* A `kubernetes` directory with a `service.yaml` and `deployment.yaml`
-
-### Generator installation
-
-```bash
-tss generator install --go-getter-url=github.com/tanzu-dev/generator-k8s-skaffold
-```
-
-To use the install command you need to install [go-getter](https://github.com/hashicorp/go-getter#installation-and-usage) CLI.
